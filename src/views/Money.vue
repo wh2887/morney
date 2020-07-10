@@ -35,8 +35,8 @@
                 <button>7</button>
                 <button>8</button>
                 <button>9</button>
-                <button>OK</button>
-                <button>0</button>
+                <button class="ok">OK</button>
+                <button class="zero">0</button>
                 <button>.</button>
             </div>
         </div>
@@ -52,6 +52,31 @@
 
 <style lang="scss" scoped>
     @import "~@/assets/styles/helper.scss";
+
+    .numberPad {
+        .output {
+            font-size: 36px;
+            font-family: Consolas monospace;
+            padding: 9px 16px;
+            text-align: right;
+        }
+
+        .buttons {
+            > button {
+                width: 25%;
+                height: 64px;
+                float: left;
+
+                &.ok {
+                    height: 64*2px;
+                    float: right;
+                }
+                &.zero{
+                    width: 25*2%;
+                }
+            }
+        }
+    }
 
     .types {
         background: #c4c4c4;
@@ -74,7 +99,7 @@
                 left: 0;
                 width: 100%;
                 height: 4px;
-                background: #333333;
+                background: $color-nearblack;
             }
         }
     }
