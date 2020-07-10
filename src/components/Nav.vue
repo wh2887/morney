@@ -4,7 +4,6 @@
             <Icon name="money"/>
             记账
         </router-link>
-
         <router-link class="item" to="/labels" active-class="selected">
             <Icon name="labels"/>
             标签
@@ -25,6 +24,7 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "~@/assets/styles/helper.scss";
 
     nav {
         display: flex;
@@ -44,10 +44,10 @@
                 width: 32px;
                 height: 32px;
             }
-        }
 
-        > .item.selected {
-            color: violet;
+            > .item.selected {
+                color: $color-highlight;
+            }
         }
     }
 </style>
