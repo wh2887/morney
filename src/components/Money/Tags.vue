@@ -35,7 +35,6 @@
 </script>
 
 <style lang="scss" scoped>
-
     .tags {
         height: 13vh;
         font-size: 14px;
