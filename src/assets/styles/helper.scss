@@ -4,3 +4,24 @@ $font-song: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "So
 
 $color-highlight: #f00;
 $color-nearblack: #333;
+
+//placeholder
+//选择器是什么不知道，但是我知道里面的内容是什么
+//先写好样式，然后使用的时候再加选择器
+%clearFix {
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+$color-shadow: rgba(0, 0, 0, 0.25);
+%outerShadow {
+    box-shadow: 0 0 3px $color-shadow;
+}
+
+%innerShadow {
+    box-shadow: inset 0 -3px 3px -3px $color-shadow,
+    inset 0 3px 3px -3px $color-shadow;
+}
