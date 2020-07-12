@@ -45,7 +45,7 @@
                 height: 32px;
             }
 
-            > .item.selected {
+            &.selected {
                 color: $color-highlight;
             }
         }
