@@ -33,6 +33,7 @@
 
     create() {
       const name = window.prompt('请输入标签名');
+      if (name === null) {return;}
       if (name === '') {
         window.alert('标签名不能为空！');
       } else if (this.dataSource) {
